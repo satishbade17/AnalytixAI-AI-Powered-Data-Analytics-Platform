@@ -1,0 +1,168 @@
+/* ===========================
+   GLOBAL
+=========================== */
+
+.stApp{
+    background:#F7F9FC;
+    color:#222222;
+}
+
+body,p,span,label{
+    color:#222222;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.block-container{
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+
+/* ===========================
+   HEADINGS
+=========================== */
+
+h1{
+    color:#4F46E5 !important;
+    font-size:42px !important;
+    font-weight:700 !important;
+}
+
+h2{
+    color:#222222 !important;
+    font-size:30px !important;
+}
+
+h3{
+    color:#333333 !important;
+    font-size:24px !important;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+[data-testid="stSidebar"]{
+    background:#020817;
+    width:280px !important;
+}
+
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] span,
+[data-testid="stSidebar"] label{
+    color:white !important;
+}
+
+/* Hide only Home (app.py) */
+
+[data-testid="stSidebarNav"] ul li:first-child{
+    display:none;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.stButton > button{
+
+    background:#5B4CF0;
+    color:white !important;
+
+    border:none;
+    border-radius:10px;
+
+    height:50px;
+
+    font-weight:600;
+}
+
+.stButton > button:hover{
+
+    background:#4338CA;
+}
+
+/* ===========================
+   SELECTBOX
+=========================== */
+
+.stSelectbox > div > div{
+
+    background:white !important;
+
+    color:#222222 !important;
+
+    border-radius:10px;
+
+    border:1px solid #D1D5DB;
+}
+
+/* ===========================
+   DATAFRAME
+=========================== */
+
+[data-testid="stDataFrame"]{
+
+    background:white;
+
+    border-radius:15px;
+
+    border:1px solid #E5E7EB;
+}
+
+/* ===========================
+   METRICS
+=========================== */
+
+div[data-testid="metric-container"]{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* ===========================
+   ALERTS
+=========================== */
+
+div[data-testid="stAlert"]{
+    border-radius:12px;
+}
+
+/* ===========================
+   TABS
+=========================== */
+
+button[data-baseweb="tab"]{
+    color:#222222 !important;
+}
+
+button[data-baseweb="tab"][aria-selected="true"]{
+
+    color:#4F46E5 !important;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:768px){
+
+    h1{
+        font-size:30px !important;
+    }
+
+    h2{
+        font-size:24px !important;
+    }
+
+    [data-testid="stSidebar"]{
+        width:100% !important;
+    }
+}
